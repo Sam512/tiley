@@ -6,7 +6,7 @@ const size = parseInt(argv.size || 26, 10);
 const s = parseFloat(argv.s || 0.8);
 const v = parseFloat(argv.v || 0.8);
 const seed = parseFloat(argv.seed || 1.2);
-const palette = colors.palette(size, seed, s, v);
+const palette = colors.palette(size, 1.2, s, v);
 
 function idToColor(id) {
   const idAsHex = crypto.createHash('md5').update(id).digest('hex');
